@@ -1,0 +1,349 @@
+/* =========== RESET =========== */
+@charset "UTF-8";
+* { /* Configuração genérica para os elementos da página */
+	margin: 0;
+	padding: 0;
+	font-size: 100%; /* para unidades relativas */
+	border: none; /* Nenhuma borda */
+	outline: none;
+	font-weight: 300; /* Tamanho da fonte padrão */
+	box-sizing: border-box; /* Não altera a dimensão do elemento ao utilizar padding */
+	font-family: 'Fira Sans', sans-serif; /* Fonte padrão do documento */
+}
+
+body { /* Corpo da página */
+	background-color: #F3E2A9; /* Cor de fundo */
+}
+
+a { /* Configuração dos links */
+	text-decoration: none; /* Nenhuma decoração no texto */
+	color: #000;
+}
+
+ul { /* Configuração das listas não-ordenadas */
+	list-style: none; /* Lista sem nenhum estilo inicial */
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Cabeçalho */
+.cabecalho {
+	width: 100%; /* Largura */
+	float: left; /* faz o objeto se posicionar a esquerda */
+	padding: 3% 4%; /* Espaço interno */
+}
+
+.logo {
+	width: 56px; /* Largura */
+	height: 56px; /* Altura */
+	float: left;
+	background: url('../_images/logo-mobile.png') no-repeat center center; /* Configura a imagem no 
+		centro, com 56px de tamanho e sem repetições */
+	font-size: 0; /* Tamanho da fonte, 0 para não aparecer texto */
+}
+
+.btn-menu {
+	width: 56px; /* Largura */
+	height: 56px; /* Altura  */
+	float: right; /* Objeto flutuando a direita */
+	text-align: center; /* Alinhamento do texto no centro */
+	color: #FFFFFF; /* Cor do ícone */
+	border-radius: 56px; /* Botão redondo */
+	cursor: pointer;
+	background: linear-gradient(to right, #DBA901, #F3E2A9); /* Efeito gradiente linear */
+}
+
+/* Menu */
+.menu {
+	display: none; /* Não exibe o menu incialmente */
+	width: 50%; /* Largura */
+	height: 100%; /* Altura */
+	position: fixed; /* Posição fixa */
+	background-color: rgba(0, 0, 0, .9); /* Cor de fundo, com transparência */
+	top: 0; /* Alinha o topo */
+	left: 50%; /* Alinha a esquerda */
+}
+
+.btn-close {
+	font-size: 1.5em; /* Tamanho da fonte */
+	color: #FFF; /* Cor da fonte */
+	float: right; /* Texto flutuando a direita */
+	cursor: pointer;
+	margin: 2% 3% 0 0;
+}
+
+.menu ul {
+	width: 100%; /* Largura */
+	float: left; /* Flutuando a esquerda */
+	text-align: center; /* Texto centralizado */
+}
+
+.menu li {
+	padding: 1.5%; /* Espaçamento interno */
+}
+
+.menu li a {
+	font-size: 2em; /* Tamanho da fonte */
+	color: #FFF; /* Cor da fonte */
+	padding: 1.5% 3%; /* Espaçamento interno (base e laterais respectivamente) */
+	border-radius: 7px; /* Todas as bordas arredondadas */
+}
+
+.menu li a:hover { /* Hover pseudo-classe */
+	border: 1px solid #DBA901;
+}
+
+ul#list-menu button#btn-user {
+	width: 56px;
+	height: 56px;
+	color: #FFF;
+	font-weight: 700;
+	cursor: pointer;
+	background-color: #DBA901;
+	border-radius: 56px; /* Arredonda as pontas */
+}
+
+/* Banner */
+
+.banner {
+	width: 100%; /* Largura em 100% (toda a tela) */
+	float: left; /* Flutuando a esquerda */
+	text-align: center; /* Texto alinhado no centro */
+	padding: 3% 4%; /* Espaçamento interno 3% base 4% laterais */
+	background: url('../_images/gringotes_card.JPG') no-repeat fixed; /* Imagem de fundo do banner, background fixo */
+}
+
+.title {
+	width: 100%;
+}
+
+.title h2 {
+	font-size: 2.5em; /* Tamanho da fonte */
+	font-weight: 700;
+}
+
+.title h3 {
+	font-size: 1.5em; /* Tamanho da fonte */
+}
+
+.buttons {
+	width: 100%;
+	margin-top: 2%; /* Espaçamento externo superior */
+}
+
+.buttons i {
+	float: right; /* Faz o ícone do botão flutuar a direita */
+}
+
+.btn-criar {
+	width: 100%;
+	font-size: 1.5em;
+	text-align: left;
+	cursor: pointer;
+	padding: 5%;
+	border-radius: 10px; /* Arredonda os cantos do botão */
+	background-color: #FFF; /* Cor de fundo branca */
+	color: #8B6914; /* Cor do texto = preto avermelhado */
+}
+
+.btn-acessar {
+	width: 100%;
+	font-size: 1.5em;
+	text-align: left;
+	cursor: pointer;
+	padding: 5%;
+	border-radius: 10px; /* Arredonda os cantos */
+	background-color: #DBA901;
+	color: #FFF;
+	margin-top: 2%;
+}
+
+ul#info_user {
+	width: 100%;
+	background-color: #DBA901;
+	float: right;
+}
+
+ul#info_user li {
+	float: right;
+	margin-right: 2%;
+	padding: 1% 0;
+}
+
+section#corpo {
+	margin: 2%;
+}
+
+section#corpo figure#bp { /* Imagem do banco */
+	margin-top: 5%;
+}
+
+/* Rodapé */
+.rodape { /* footer */
+	width: 100%;
+	float: left;
+	padding: 3% 4%;
+	text-align: center;
+	background: linear-gradient(to right, #DBA901, #F3E2A9); /* Fundo com gradiente linear */
+}
+
+.botao {
+	background: linear-gradient(to right, #DBA901, #F3E2A9);
+	width: 84.5%;
+	cursor: pointer;
+	margin: 3% 2% 3% 6%;
+}
+
+.social-icons a { /* Links de redes sociais */
+	font-size: 1.5em;
+	color: rgba(0, 0, 0, 0.7); /* Cor branca com transparência */
+	margin-right: 3%;
+}
+
+.social-icons a:last-child { /* Pseudo-classe, delimita o ultimo objeto a */
+	margin-right: 0; /* O ultimo objeto não possui espaçamento direito */
+}
+
+.social-icons a:hover {
+	color: rgb(0, 0, 0); /* Cor branca */
+}
+
+.copyright {
+	margin-top: 2%;
+	color: rgba(0, 0, 0, .9); /* Branco com transparência */
+}
+
+p a {
+	color: #00008B;
+}
+
+/* Media Types: determinam um bloco para um determinado tipo de meio de acesso 
+ * screen
+ * Para monitores ou dispositivos com telas coloridas e resolução adequada.
+ * print
+ * para impressoras. Muito usado para dar uma versão de impressão do site.
+ */
+
+@media print { /* Página de impressão */
+	.title h2 {
+		font-size: 2.5em;
+		color: red;
+		font-weight: 700;
+	}
+
+	.title h3 {
+		font-size: 1.5em;
+		color: blue;
+	}
+}
+
+/* ========== MOBILE FIRST ========== */
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) { /* Cria uma estrutura lógica, ou seja quando o tamanho chegar a
+480px ele assume novas configurações */
+	.logo { /* Configurações da logo */
+		width: 102px;
+		height: 102px;
+		background: url('../_images/logo_bank.png') center center no-repeat;
+	}
+
+	.buttons {
+		font-size: 1.5em; /* Aumenta a fonte dos botões */
+	}
+}
+
+/* SMALL DEVICES - TABLETS */
+@media screen and (min-width: 768px) { /* Tablets - novas configurações para este ponto de ajuste */
+	.logo { /* Configurações da logo */
+		width: 214px;
+		background: url('../_images/logo_bank-full.png') center center no-repeat;
+	}
+
+	.banner {
+		margin-bottom: 1%;
+	}
+	figure#bp img {
+		margin: 1% 2%;
+		width: 30%;
+	}
+
+	section#corpo {
+		margin-left: .5%;
+	}
+
+	aside#lateral {
+		margin: 1% 0 2% .5%;
+	}
+}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS */
+@media screen and (min-width: 960px) { /* Novo ponto de ajuste */
+	.title {
+		width: 70%; /* Títulos do banner */
+		float: left; /* Flutuando a esquerda */
+		text-align: left;
+	}
+
+	.title h2 {
+		font-size: 3em;
+	}
+
+	.title h3 {
+		font-size: 2em;
+		font-weight: 500;
+	}
+
+	.title h3 a {
+		font-weight: 500;
+		color: #000;
+	}
+
+	.buttons {
+		width: 30%; /* Botões do banner */
+		float: right;
+		margin-top: 0; /* Zera a margin (espaçamento externo) superior */
+	}
+}
+
+/* LARGE DEVICES - WIDE SCREENS */
+@media screen and (min-width: 1280px) { /* Ponto de ajuste largo */
+	.btn-menu { /* Remove o botão de menu */
+		display: none !important; /* Não mostra o objeto, e força comando */
+	}
+
+	.btn-close { /* Botão fechar */
+		display: none !important; /* Removido */
+	}
+
+	ul#list-menu button#btn-user {
+		float: right;
+	}
+
+	.menu { /* Menu */
+		width: auto; /* Largura automatica */
+		height: 56px; /* Altura */
+		line-height: 56px; /* Alinha todo o texto */
+		float: right; /* Faz o menu flutuar a direita */
+		background-color: #F3E2A9; /* Mesma cor do corpo da página */
+		display: block; /* Mostra o objeto em bloco */
+		position: static; /* Posição estática */
+	}
+
+	.menu li { /* Itens da lista */
+		padding: 0;
+		float: left;
+	}
+
+	.menu li a { /* Links dos itens */
+		color: #130400; /* Cor do texto */
+		font-size: 1em; /* Font-size padrão */
+		padding: 15px; /* Espaçamento interno (todas as direções) */
+	}
+
+	.menu li a:hover { /* Quando passar o mouse */
+		border: none; /* Sem borda */
+		color: #8B6914;
+	}
+}

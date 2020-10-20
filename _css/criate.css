@@ -1,0 +1,180 @@
+@charset = "UTF-8";
+
+body {
+	background-color: #A4A4A4; /* Cor de fundo */
+}
+
+.banner {
+	display: none;
+}
+
+form input {
+	padding: 2%; /* Espaçamento interno */
+	font-size: 12pt;
+	border: 1px solid #DBA901; /* Borda */
+	width: 90%;
+	margin: 0 3%;
+}
+
+form input#data {
+	color: #848484; /* Cor do texto */
+}
+
+form select {
+	width: 90%;
+	font-size: 12pt;
+	padding: 2%;
+	border: 1px solid #DBA901;
+	background-color: #F3E2A9;
+	margin: 0 3%;
+}
+
+form label {
+	display: none;
+	margin: 1% 3% 0 4%;
+}
+
+form input#submit {
+	background: linear-gradient(to right, #DBA901, #F3E2A9);
+	width: 84.5%;
+	cursor: pointer;
+	margin: 3% 2% 3% 6%;
+}
+
+select {
+	font-size: 12pt;
+}
+
+strong {
+	color: #FF0000;
+	font-size: 12pt;
+}
+
+.sucess {
+	margin-bottom: 25%;
+}
+
+.error {
+	text-align: center;
+	margin-bottom: 2%;
+	color: #CD0000;
+	font-weight: 600;
+}
+
+/* ----- MEDIA - Break Points----- */
+@media screen and (min-width: 600px) {
+	body {
+		background-color: #F3E2A9;
+	}
+
+	form {
+		background-color: #A4A4A4;
+	}
+
+	form input {
+		width: 70%;
+		margin-left: 15%;
+	}
+	form label {
+		margin-left: 15%;
+	}
+
+	form input#submit {
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	form select {
+		width: 70%;
+		margin-left: 15%;
+	}
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+	form {
+		width: 60%;
+		float: left;
+		margin: 0 20% 1% 20%;
+		padding: 5% 0;
+	}
+	form input {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	form label {
+		margin-left: 10%;
+		width: 60%;
+	}
+
+	form select {
+		width: 80%;
+		margin-left: 10%;
+	}
+	form input#submit {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+/* Tablets e Desktops */
+@media screen and (min-width: 960px) {
+	form input {
+		width: 50%;
+		padding: 1%;
+		margin: 0 20% 0 25%;
+	}
+
+	form input#name {
+		width: 40%;
+		margin: 0 0 0 4.4%;
+		float: left;
+	}
+
+	form input#lName {
+		margin: 0 0;
+	}
+
+	form label {
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	form select {
+		width: 50%;
+		padding: 1%;
+		margin-left: 25%;
+	}
+
+	form input#login {
+		margin: 2% 0 0 25%;
+	}
+
+	form input#pswd {
+		width: 40%;
+		margin: 2% 0 0 9%;
+		float: left;
+	}
+
+	form input#cpswd {
+		width: 40%;
+		margin: 2% 0;
+	}
+
+	form input#submit {
+		width: 30%;
+		margin-left: 35%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.banner {
+		display: block;
+	}
+
+	.title {
+		text-align: center;
+		width: 100%;
+	}
+}
