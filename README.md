@@ -18,7 +18,7 @@
 
 <p>Esta aplicação contou com o uso das seguintes tecnologias:</p>
 
-- HTML: construção das páginas
-- CSS: estilização
-- JavaScript e JQuery: front-end
-- PHP: back-end
+- HTML - construção das páginas
+- CSS - estilização
+- JavaScript e JQuery - front-end
+- PHP - back-end
