@@ -16,7 +16,7 @@
 
 ### :computer: Tecnologias
 
-<p>Esta aplicação contou com o uso das seguintes tecnologias</p>
+<p>Esta aplicação contou com o uso das seguintes tecnologias:</p>
 
 - HTML: construção das páginas
 - CSS: estilização
