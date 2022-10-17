@@ -57,7 +57,7 @@
 		<label for="pswd">Senha:</label><br/>
 		<input type="password" name="pswd" id="pswd" placeholder="Senha">
 		<input type="submit" name="submit" id="submit" class="botao" value="Acessar"><br/>
-		<p>Não possui conta? <a href="criate.php" id="cad">Cadastre-se!</a></p>
+		<p>Não possui conta? <a href="create.php" id="cad">Cadastre-se!</a></p>
 		<?php if (!empty($erros)) {
 			echo '<p class="error">'. $erros[0]. '</p>';
 			}?>
