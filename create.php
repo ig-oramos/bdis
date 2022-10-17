@@ -127,7 +127,7 @@
 	$title = 'Criar';
 	$title1 = 'Crie sua conta';
 	$subtitle = 'E utilize todos os recursos disponíveis aos membros!';
-	$links = array('criate');
+	$links = array('create');
 	require_once('header.php');
 ?>
 <section id="corpoC">
