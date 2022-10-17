@@ -22,4 +22,4 @@
 - CSS - estilização
 - JavaScript e JQuery - front-end
 - PHP - back-end
-- MySQL - armazenamento de dados
+- MySQL - banco de dados
