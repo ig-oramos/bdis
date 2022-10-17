@@ -53,8 +53,8 @@
 				<?php
 					} else {
 				?>
-					<li><a href="acess.php">Acessar</a></li>
-					<li><a href="criate.php">Criar</a></li>
+					<li><a href="access.php">Acessar</a></li>
+					<li><a href="create.php">Criar</a></li>
 				<?php
 					}
 				?>
@@ -83,9 +83,9 @@
 		if ($title === 'BDIs') {
 		?>
 		<div class="buttons">
-			<a href="criate.php"><button class="btn-criar">Criar<i class="fa fa-arrow-circle-right">
+			<a href="create.php"><button class="btn-criar">Criar<i class="fa fa-arrow-circle-right">
 			</i></button></a>
-			<a href="acess.php"><button class="btn-acessar">Acessar<i class="fa fa-question-circle">
+			<a href="access.php"><button class="btn-acessar">Acessar<i class="fa fa-question-circle">
 			</i></button></a>
 		</div>
 		<?php
