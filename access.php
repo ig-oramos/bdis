@@ -45,7 +45,7 @@
 	$title = 'Acessar';
 	$title1 = 'Acesse sua conta';
 	$subtitle = 'E manipule suas informações';
-	$links = array('acess');
+	$links = array('access');
 	require_once('header.php');
 ?>
 <section id="corpoC">
