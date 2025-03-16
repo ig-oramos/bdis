@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body {
+	background-color: #A4A4A4;
+}
+
+.banner {
+	display: none;
+}
+
+label {
+	display: none;
+}
+
+input {
+	width: 86%;
+	padding: 2%;
+	border: 1px solid #DBA901;
+	font-size: 12pt;
+	margin: 0 7%;
+}
+
+input#login {
+	margin-top: 20%;
+} 
+
+input#submit {
+	width: 86%;
+	margin: 1% 7%;
+}
+
+p {
+	text-align: center;
+	margin: 10% 0 5% 0;
+}
+
+a#cad {
+	color: #F3E2A9;
+}
+
+/* ----- Media - Break Points ----- */
+/* Small Device - Smartphones */
+@media screen and (min-width: 480px) {
+	input {
+		width: 70%;
+		margin: 0 15%;
+	}
+
+	input#login {
+		margin-top: 0;
+	}
+
+	input#submit {
+		width: 70%;
+		margin: 1% 15%;
+	}
+
+	p {
+		margin-bottom: 1%;
+	}
+}
+
+@media screen and (min-height: 410px) {
+	form {
+		padding-bottom: 10%;
+	}
+}
+
+@media screen and (min-height: 498px) {
+	form {
+		padding-bottom: 10%;
+	}
+
+	.rodape {
+		margin-top: 10%;
+	}
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+	body {
+		background-color: #F3E2A9;
+	}
+
+	form {
+		width: 50%;
+		margin: 0% 25% 2% 25%;
+		float: left;
+		background-color: #A4A4A4;
+		padding: 3% 0 8% 0;
+	}
+
+	input {
+		width: 60%;
+		margin: 0 20%;
+	}
+
+	input#submit {
+		width: 58%;
+		margin: 1% 21%;
+	}
+}
+
+/* Medium Devices - Tablets & Desktops */
+@media screen and (min-width: 960px) {
+	.banner {
+		display: block;
+	}
+
+	.title {
+		width: 100%;
+		text-align: center;
+	}
+
+	form {
+		width: 40%;
+		margin: 5% 30%;
+		padding-bottom: 10%;
+	}
+
+	.rodape {
+		margin-top: 2%;
+	}
+}

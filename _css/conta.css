@@ -1,0 +1,362 @@
+@charset "UTF-8";
+
+/* Mobile First */
+/* Formatação da lista não-ordenada */
+.banner {
+	display: none;
+}
+
+section#corpoC ul#menu_conta {
+	list-style: none; /* Retira o pré-formato do bloco */
+	text-align: center; /* Alinha o texto no centro da página */
+}
+
+/* Formatação dos itens da lista */
+section#corpoC ul#menu_conta li {
+	margin-top: 2%; /* Ajusta o espaçamento superior externo */
+	padding: 8% 2% 8% 2%; /* Ajusta o espaçamento interno */
+	background-color: #F3E2A9; /* Configura a cor de fundo */
+	box-shadow: 3px 2px 1px rgba(0, 0, 0, .2); /* Configura uma sombra para cada item */
+	font-size: 15pt; /* Configura o tamanho da fonte */
+}
+
+/* Formatação dos itens da lista: quando selecionados */
+section#corpoC ul#menu_conta li:hover { 
+	background-color: #F5DA81; /* Muda a cor de fundo */
+}
+
+section#corpoC ul#menu_conta li#info {
+	margin-top: 20%;
+}
+
+section#corpoC ul#menu_conta li#deposit {
+	width: 33%;
+	float: left; /* Faz a opção depositar flutuar a esquerda */
+}
+
+section#corpoC ul#menu_conta li#fechar {
+	width: 33%;
+	float: right; /* Faz a opção fechar flutuar a direita */
+	margin-bottom: 20%;
+}
+
+section#corpoC ul#menu_conta li#sacar {
+	float: right;
+	width: 33%;
+}
+
+section#corpoC ul#menu_conta li#n_conta {
+	width: 40%;
+	margin: 25% 20% 20% 28%;
+}
+
+section#corpoC div#men p {
+	text-align: center;
+	margin-top: 8%;
+} 
+
+/* Formatação do formulário depositar */
+section#corpoC form#val {
+	width: 92%;
+	margin: 15% 4% 0 4%; /* Cima, direita, baixo, esquerda */
+	padding: 10% 0 10% 0;
+	background-color: #A4A4A4; /* Cor de fundo */
+	border-radius: 7px 7px 0 0; /* Bordas superiores arredondadas */
+}
+
+.opc {
+	padding: 20% 0 22% 0;
+}
+
+.botao {
+	width: 31%;
+	padding: 1% 0 1% 0;
+	border-radius: 10px;
+}
+
+.error {
+	padding-top: 20%; 
+	margin-bottom: 35%;
+	color: #CD0000;
+	font-weight: 700;
+}
+
+section#corpoC form#val label {
+	margin-left: 10%;
+}
+
+section#corpoC form#val label#ctz {
+	margin-left: 5%;
+}
+
+section#corpoC form#val input#dep {
+	width: 80%;
+	padding: 2%;
+	border: 1px solid #DBA901;
+	margin: 1% 10%;
+}
+
+section#corpoC form#val input#saq {
+	width: 80%;
+	padding: 2%;
+	border: 1px solid #DBA901;
+	margin: 1% 10%;
+}
+
+/* Formatação do botão de enviar do formulário depositar */
+section#corpoC form#val input#submit {
+	margin-left: 35%;
+	font-size: 14pt;
+}
+
+section#corpoC form#val input#s { /* Botão Sim */
+	margin-left: 18%;
+	font-size: 14pt;
+}
+section#corpoC form#val input#n { /* Botão Não */
+	margin-left: 1%;
+	font-size: 14pt
+}
+
+section#corpoC form#val input {
+	font-size: 12pt;
+}
+
+section#corpoC .opc {
+	text-align: center;
+	margin: 5% 0% 2% 0%;
+	font-size: 16pt;
+}
+
+section#corpoC select {
+	font-size: 12pt;
+	width: 80%;
+	padding: 2%;
+	border: 1px solid #DBA901;
+	margin: 1% 10%;
+	background-color: #F3E2A9;
+}
+
+/* Formatação do botão voltar */
+section#corpoC div#back a {
+	display: block; /* Exibe o elemento em bloco */
+	width: 92%; /* Largura */
+	margin: 0% 4% 15% 4%; /* Espaçamento externo (superior e laterais) */
+	background-color: #8B1A1A; /* Cor de fundo */
+	padding: 2% 0% 2% 0%; /* Espaçamento interno */
+	text-align: center; /* Alinhamento do texto */
+	color: #CDCDB4; /* Cor do texto */
+	border-radius: 0 0 7px 7px; /* Bordas inferiores */
+}
+
+section#corpoC div#back a:hover {
+	background-color: #CD2626;
+}
+
+section#corpoC table#t_info {
+	background-color: #A4A4A4;
+	width: 92%;
+	margin: 15% 4% 0 4%;
+	display: block;
+}
+
+section#corpoC table#t_info td {
+	background-color: #CDC9C9;
+	width: 50%;
+	font-size: 16pt;
+	padding: .5%;
+}
+
+section#corpoC table#t_info td#title {
+	text-align: center;
+}
+
+.cl {
+	text-align: right;
+}
+
+.cr {
+	text-align: center;
+}
+
+.error {
+	margin-top: 5%;
+	text-align: center;
+}
+
+.success {
+	text-align: center;
+	color: #008B00;
+	padding: 18% 2% 18% 2%;
+	margin: 5% 0% 3% 0%;
+}
+	
+/* Small Devices - Smartphones */
+@media screen and (min-width: 480px) {
+	section#corpoC table#t_info td { /* Table datas */
+		width: 100%;
+	}
+
+	.cl {
+		text-align: left;
+	}
+
+	section#corpoC ul#menu_conta li#n_conta {
+		margin: 7% 20% 7% 28%;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	section#corpoC table#t_info {
+		width: 70%;
+		margin: 7.5% 0 0 15%;
+	}
+
+	section#corpoC div#back a {
+		width: 70%;
+		margin: 0 0 7.5% 15%;
+	}
+
+	section#corpoC form#val {
+		width: 70%;
+		margin: 7.5% 0 0 15%;	
+	}
+}
+
+
+/* Small Devies - Tablets */
+@media screen and (min-width: 768px) {
+	section#corpoC ul#menu_conta li {
+		width: 44%;
+	}	
+
+	section#corpoC ul#menu_conta li {
+		margin-right: 2%;
+	}	
+
+	section#corpoC ul#menu_conta li#info {
+		float: left;
+		margin: 2% 2% 0% 5%;
+	}
+
+	section#corpoC ul#menu_conta li#deposit {
+		width: 30%;
+		margin-left: 4%;
+	}
+
+	section#corpoC ul#menu_conta li#fechar {
+		width: 30%;
+		margin-bottom: 2%;
+	}
+
+	section#corpoC ul#menu_conta li#sacar {
+		width: 30%;
+	}
+
+	section#corpoC ul#menu_conta li#pagMen {
+		float: right;
+		margin-right: 5%;
+	}
+
+	section#corpoC form#val label {
+		font-size: 14pt;
+	}
+}
+
+/* Medium Devices - Tablets & Desktops */
+@media screen and (min-width: 960px) {
+	.banner {
+		display: block;
+	}
+
+	.title {
+		text-align: center;
+		width: 100%;
+	}
+
+	section#corpoC table#t_info {
+		width: 50%;
+		margin: 7.5% 0 0 25%;
+	}
+
+	section#corpoC table#t_info td {
+		font-size: 20pt;
+	}
+
+	section#corpoC div#back a {
+		width: 50%;
+		margin: 0 0 7.5% 25%;
+	}
+
+	section#corpoC form#val {
+		width: 50%;
+		margin: 7.5% 0 0 25%;	
+	}
+
+	.opc {
+		padding: 2% 0;
+	}
+
+	.success {
+		padding: 0;
+	}
+
+	.error {
+		margin-bottom: 2%;
+	}
+}
+
+/* Large Devices - Wide Screens */
+@media screen and (min-width: 1280px) {
+	section#corpoC ul#menu_conta li {
+		width: 25%;
+		padding: 5% 0;
+	}
+	
+	section#corpoC ul#menu_conta li#deposit {
+		margin-left: 5%;
+		width: 25%;
+	}
+
+	section#corpoC ul#menu_conta li#pagMen {
+		width: 25%;
+		margin-right: 5%;
+	}
+
+	section#corpoC ul#menu_conta li#fechar {
+		width: 25%;
+		margin-right: 5%;
+	}
+
+	section#corpoC ul#menu_conta li#sacar {
+		width: 25%;
+		margin-right: 8%;
+		margin-bottom: 2%;
+	}
+
+	section#corpoC ul#menu_conta li#n_conta {
+		width: 30%;
+		margin: 7% 35% 7% 35%;
+	}
+
+	section#corpoC table#t_info {
+		width: 34%;
+		margin: 3% 0 0 33%;
+	}
+
+	.cl {
+		text-align: right;
+	}
+
+	section#corpoC div#back a {
+		width: 34%;
+		margin: 0 0 3% 33%;
+		padding: 1% 0;
+	}
+
+	section#corpoC form#val {
+		width: 34%;
+		margin: 3% 0 0 33%;
+		padding: 6% 0;
+	}
+}
