@@ -4,11 +4,9 @@
 
 <p>Aplicação pessoal que simula um banco virtual simples.</p>
 
-<h2><a href="https://igorgomes.000webhostapp.com/bdis/">Demonstração da aplicação</a></h2>
+### 📌 Recursos
 
-### 📌 Features
-
-<p>Algumas das principais funcionalidades (features) são:</p>
+<p>Algumas das principais funcionalidades são:</p>
 
 - [x] Cadastro de contas bancárias;
 - [x] Manipulação das contas criadas;
